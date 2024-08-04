@@ -3,5 +3,25 @@
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+
+<input class='radio' type="radio" name="highlight" data-price="25.1" value="a1">a1
+<input class='radio' type="radio" name="highlight" data-price="55.4" value="a2">a2
+<input class='radio' type="radio" name="highlight" data-price="65.3" value="a3">a3
+<input class='radio' type="radio" name="highlight" data-price="95.9" value="a4">a4
+<input id="price" type="text">
+
+<script>
+
+var inputs = document.getElementsByClassName('radio');
+var textbox = document.getElementById('price');
+var i
+for (i = 0; i < inputs.length; i++) {
+	inputs[i].onclick = function(){
+  	textbox.value = this.dataset.price;
+  }
+}
+  
+</script>
+  
 </body>
 </html>
