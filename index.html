@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World 1115</h1>
+<h1>Hello World 1</h1>
 <p>I'm hosted with GitHub Pages.</p>
 
 <input class='d110' type="radio" name="highlight" data-price="25.1" value="a1">a1
@@ -19,7 +19,7 @@
 <input class='d115' type="radio" name="highlight" data-price="95.9" value="a4">a4
 
 <br>	
-<input id="price" type="text">
+<input id="priced110" type="text">
 <br>
 <input id="priced115" type="text">
 <br>
@@ -82,17 +82,18 @@
 var inputsd110 = document.getElementsByClassName('d110');
 var inputsd115 = document.getElementsByClassName('d115');	
 	
-var textbox = document.getElementById('price-d110');
+var textboxd110 = document.getElementById('priced110');
+var textboxd115 = document.getElementById('priced115');
 var i
 for (i = 0; i < inputsd110.length; i++) {
 	inputsd110[i].onclick = function(){
-  	textbox.value = this.dataset.price;
+  	textboxd110.value = this.dataset.priced110;
   }
 }
 
 for (i = 0; i < inputsd115.length; i++) {
 	inputsd115[i].onclick = function(){
-  	textbox.value = this.dataset.priced115;
+  	textboxd115.value = this.dataset.priced115;
   }
 }
 	
